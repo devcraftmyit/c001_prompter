@@ -1,0 +1,13 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "prompter_rjt",
+      "rootUri": "../",
+      "packageUri": "lib/"
+    }
+  ],
+  "generated": "2020-10-10T05:43:46.860989Z",
+  "generator": "pub",
+  "generatorVersion": "2.10.1"
+}
