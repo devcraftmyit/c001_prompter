@@ -2,12 +2,12 @@
   "configVersion": 2,
   "packages": [
     {
-      "name": "prompter",
+      "name": "prompter_rt",
       "rootUri": "../",
       "packageUri": "lib/"
     }
   ],
-  "generated": "2020-10-12T06:58:27.863678Z",
+  "generated": "2020-10-15T07:26:05.172905Z",
   "generator": "pub",
   "generatorVersion": "2.10.1"
 }
