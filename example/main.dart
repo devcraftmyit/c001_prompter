@@ -1,5 +1,6 @@
 import 'package:prompter_rt/src/terminal.dart';
 
 void main() {
-  print('hi There');
+  var terminal = Terminal();
+  terminal.printPrompt('Hi There');
 }
