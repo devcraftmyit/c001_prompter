@@ -6,8 +6,8 @@ class Terminal {
   }
   void clearScreen(){
     if (Platform.isWindows) {
-
-    } else {
+stdout.write('\x1B[2j\x1B[0f');
+    } else { 
 
     }
   }
