@@ -1,5 +1,5 @@
-class Option {
+class Options {
   String label;
   dynamic value;
-  Option(this.label, this.value);
+  Options(this.label, this.value);
 }

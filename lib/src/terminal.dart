@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'option.dart';
 
 class Terminal {
   void printPrompt(String prompt) {
@@ -15,5 +16,13 @@ class Terminal {
     } else {
       stdout.write('\x1B[2J\x1B[3J\x1B[H');
     }
+  }
+
+  void printOptions(List<Options> options) {
+    for (var i = 0; i < options.length; i++) {
+      stdout.writeln('[$i] ${options[i].label}');
+    }
+    stdout.writeln('Enter a Choice\n');
+    stdout.write('>');
   }
 }
