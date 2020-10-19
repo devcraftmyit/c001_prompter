@@ -1,9 +1,13 @@
 import 'package:prompter_rt/src/terminal.dart';
+import 'package:prompter_rt/src/option.dart';
 
 void main() {
   var terminal = Terminal();
-  terminal.clearScreen();
-  terminal.printPrompt('Hi There');
-  var input = terminal.collectInput();
-  print('you entered $input');
+  var options = [
+    new Options('I want the color red', '#f00'),
+    new Options('I want the color blue', '#00f')
+  ];
+  terminal.printOptions(options);
+  var response = terminal.collectInput();
+  print(response);
 }
