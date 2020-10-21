@@ -1,13 +1,11 @@
-import 'package:prompter_rt/src/terminal.dart';
 import 'package:prompter_rt/src/option.dart';
+import 'package:prompter_rt/src/prompter.dart';
 
 void main() {
-  var terminal = Terminal();
   var options = [
     new Options('I want the color red', '#f00'),
     new Options('I want the color blue', '#00f')
   ];
-  terminal.printOptions(options);
-  var response = terminal.collectInput();
-  print(response);
+  var prompter = Prompter();
+  prompter.ask('What colour do you want', options);
 }
