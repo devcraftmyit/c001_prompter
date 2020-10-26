@@ -6,6 +6,7 @@ void main() {
     new Options('I want the color red', '#f00'),
     new Options('I want the color blue', '#00f')
   ];
-  var prompter = Prompter();
-  prompter.ask('What colour do you want', options);
+  final prompter = Prompter();
+  final usersPick = prompter.ask('what color would you like', options);
+  print(usersPick);
 }
