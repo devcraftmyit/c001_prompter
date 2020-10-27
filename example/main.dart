@@ -7,6 +7,5 @@ void main() {
     new Options('I want the color blue', '#00f')
   ];
   final prompter = Prompter();
-  final usersPick = prompter.askMultiple('what color would you like', options);
-  print(usersPick);
+  print (prompter.askBinary('Do you like Dart'));
 }

@@ -4,8 +4,10 @@ import 'terminal.dart';
 final _terminal = const Terminal();
 
 class Prompter {
-  askBinary(String prompt) {
+  bool askBinary(String prompt) {
     _terminal.printPrompt('$prompt Y/N');
+    final input = _terminal.collectInput();
+    return input.contains('y');
   }
 
   askMultiple(String prompt, List<Options> options) {
