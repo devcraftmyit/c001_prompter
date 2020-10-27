@@ -4,7 +4,7 @@ import 'terminal.dart';
 final _terminal = const Terminal();
 
 class Prompter {
-  askNew(String prompt) {
+  askBinary(String prompt) {
     _terminal.printPrompt('$prompt Y/N');
   }
 
