@@ -1,5 +1,4 @@
-import 'package:prompter_rt/src/option.dart';
-import 'package:prompter_rt/src/prompter.dart';
+import 'package:prompter_rt/prompter_rt.dart';
 
 void main() {
   var options = [
