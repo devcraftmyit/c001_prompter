@@ -1,3 +1,6 @@
 name: prompter_rt
 version: 0.0.1
 description: Library to create CLI Wizards
+AUTHOR: Robert Tweedie <tweedierjt:gmail.com>
+environment:
+  sdk: '>=2.0.0 <3.16.0'
